@@ -1,0 +1,20 @@
+.newsletter {
+    width: 100%;
+    &__content {
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 80%;
+        margin-left: 2rem;
+        &--size {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        & p {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    &__button {
+        text-align: right;
+    }
+}

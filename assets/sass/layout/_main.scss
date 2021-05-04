@@ -3,12 +3,14 @@
     margin: 0 auto;
     .news-list {
         width: 100%;
-        float: left;
         &__article {
+            display: flex;
+            flex-wrap: nowrap;
             width: 100%;
             display: inline-block;
             cursor: pointer;
-            padding: 0 0.5rem;
+            padding: 0 1rem;
+            margin: 1rem;
             @include respond-to('lg') {
                 padding: 1.5rem 1rem;
             }

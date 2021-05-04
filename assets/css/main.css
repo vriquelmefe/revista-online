@@ -21,7 +21,6 @@ h1,
 h2,
 h3 {
   font-weight: bold;
-  font-size: 1.2rem;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -461,13 +460,15 @@ body {
 }
 .main-content .news-list {
   width: 100%;
-  float: left;
 }
 .main-content .news-list__article {
+  display: flex;
+  flex-wrap: nowrap;
   width: 100%;
   display: inline-block;
   cursor: pointer;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+  margin: 1rem;
 }
 @media (min-width: 992px) {
   .main-content .news-list__article {
@@ -514,10 +515,32 @@ body {
   display: none;
 }
 
-.footer {
-  width: 960px;
-  margin: 0 auto;
+.newsletter {
+  width: 100%;
+}
+.newsletter__content {
   text-align: center;
+  margin-bottom: 1rem;
+  width: 80%;
+  margin-left: 2rem;
+}
+.newsletter__content--size {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.newsletter__content p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.newsletter__button {
+  text-align: right;
+}
+
+.footer {
+  width: 100%;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=main.css.map */
