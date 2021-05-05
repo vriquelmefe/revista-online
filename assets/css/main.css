@@ -87,6 +87,16 @@ body {
   padding: 1.5%;
   border-bottom: 1px solid gray;
 }
+@media (min-width: 768px) {
+  .nav {
+    width: 85%;
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    width: 80%;
+  }
+}
 .nav__logo {
   text-transform: uppercase;
   font-weight: bolder;
@@ -96,7 +106,8 @@ body {
   text-align: right;
 }
 .nav__items {
-  padding: 0 2rem 0 0;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 .nav__item {
   display: inline-block;
@@ -499,7 +510,7 @@ body {
 
 .newsletter {
   width: 100%;
-  display: grid;
+  display: inline-block;
 }
 .newsletter__content {
   text-align: center;
@@ -515,8 +526,17 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
-.newsletter__content__group {
-  text-align: end;
+.newsletter__group {
+  text-align: center;
+}
+.newsletter__group input {
+  border: 0;
+}
+.newsletter__group--button {
+  background-color: coral;
+  color: white;
+  border: 0;
+  padding: 0.3em;
 }
 
 .footer {

@@ -2,6 +2,12 @@
   width: 100%;
   padding: 1.5%;
   border-bottom: 1px solid gray;
+  @include respond-to('md') {
+    width: 85%;
+  }
+  @include respond-to('lg') {
+    width: 80%;
+  }
   &__logo {
     text-transform: uppercase;
     font-weight: bolder;
@@ -11,7 +17,8 @@
     text-align: right;
   }
   &__items {
-    padding: 0 2rem 0 0;
+    box-sizing: border-box;
+    padding: .5rem;
   }
   &__item {
     display: inline-block;
