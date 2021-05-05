@@ -73,24 +73,6 @@ section {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
 ol,
 ul {
   list-style: none;
@@ -138,9 +120,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-.input-menu {
-  border-radius: 30px;
+.nav__item .input-menu {
+  border-radius: 20px;
   font-size: 0.7rem;
 }
 
@@ -456,18 +437,16 @@ body {
 }
 .main-content {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 .main-content .news-list {
   width: 100%;
 }
 .main-content .news-list__article {
-  display: flex;
-  flex-wrap: nowrap;
   width: 100%;
   display: inline-block;
   cursor: pointer;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   margin: 1rem;
 }
 @media (min-width: 992px) {
@@ -475,37 +454,40 @@ body {
     padding: 1.5rem 1rem;
   }
 }
-.main-content .news-list__article__header {
+.main-content .news-list__header {
   font-weight: bold;
   font-size: 2rem;
   padding: 1rem 0;
 }
 @media (min-width: 992px) {
-  .main-content .news-list__article__header {
+  .main-content .news-list__header {
     font-size: 1.2rem;
   }
 }
-.main-content .news-list__article__body--image {
-  width: 100%;
-  height: 150px;
+.main-content .news-list__body--image {
+  width: 85vw;
+  height: 10em;
+  margin-right: 2rem;
 }
 @media (min-width: 768px) {
-  .main-content .news-list__article__body--image {
-    height: 100%;
+  .main-content .news-list__body--image {
+    width: 75vw;
+    height: 8em;
   }
 }
 @media (min-width: 992px) {
-  .main-content .news-list__article__body--image {
-    height: 100%;
+  .main-content .news-list__body--image {
+    width: 50vw;
+    height: 20em;
   }
 }
-.main-content .news-list__article__body--paragraph {
+.main-content .news-list__body--paragraph {
   font-weight: bold;
   padding: 1rem 0.625rem;
   font-size: 1rem;
 }
 @media (min-width: 992px) {
-  .main-content .news-list__article__body--paragraph {
+  .main-content .news-list__body--paragraph {
     font-size: 0.7rem;
     padding: 1rem 0;
   }
@@ -517,6 +499,7 @@ body {
 
 .newsletter {
   width: 100%;
+  display: grid;
 }
 .newsletter__content {
   text-align: center;
@@ -532,8 +515,8 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
-.newsletter__button {
-  text-align: right;
+.newsletter__content__group {
+  text-align: end;
 }
 
 .footer {

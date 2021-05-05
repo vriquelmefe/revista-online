@@ -1,39 +1,38 @@
 .nav {
-    width: 100%;
-    padding: 1.5%;
-    border-bottom: 1px solid gray;
-    &__logo {
-        text-transform: uppercase;
-        font-weight: bolder;
-        font-size: 1.5rem;
+  width: 100%;
+  padding: 1.5%;
+  border-bottom: 1px solid gray;
+  &__logo {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  &__menu {
+    text-align: right;
+  }
+  &__items {
+    padding: 0 2rem 0 0;
+  }
+  &__item {
+    display: inline-block;
+    font-size: .8rem;
+    @include respond-to('md') {
+      font-size: 1rem;
     }
-    &__menu {
-        text-align: right;
+    &:first-child {
+      display: inline-block;
+      display: none;
+      @include respond-to('lg') {
+        display: contents;
+      }
     }
-    &__items {
-        padding: 0 2rem 0 0;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
     }
-    &__item {
-        display: inline-block;
-        font-size: .8rem;
-        @include respond-to('md') {
-            font-size: 1rem;
-        }
-        &:first-child {
-            display: inline-block;
-            display: none;
-            @include respond-to('lg') {
-                display: contents;
-            }
-        }
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+    .input-menu {
+      border-radius: 20px;
+      font-size: .7rem;
     }
-}
-
-.input-menu {
-    border-radius: 30px;
-    font-size: .7rem;
+  }
 }

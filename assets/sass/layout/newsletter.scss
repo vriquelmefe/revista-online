@@ -1,20 +1,21 @@
 .newsletter {
-    width: 100%;
-    &__content {
-        text-align: center;
-        margin-bottom: 1rem;
-        width: 80%;
-        margin-left: 2rem;
-        &--size {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-        }
-        & p {
-            font-size: 1rem;
-            font-weight: bold;
-        }
+  width: 100%;
+  display: grid;
+  &__content {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 80%;
+    margin-left: 2rem;
+    &--size {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
-    &__button {
-        text-align: right;
+    & p {
+      font-size: 1rem;
+      font-weight: bold;
     }
+    &__group {
+      text-align: end;
+    }
+  }
 }
