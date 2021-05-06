@@ -1,0 +1,15 @@
+.newsletter__group {
+  text-align: center;
+  & input {
+    border: 0;
+    width: 50%;
+    height: 4vh;
+  }
+  &--button {
+    background-color: coral;
+    color: white;
+    border: 0;
+    padding: .3em;
+    font-size: 1.2em;
+  }
+}

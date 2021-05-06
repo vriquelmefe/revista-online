@@ -15,16 +15,4 @@
       font-weight: bold;
     }
   }
-  &__group {
-    text-align: center;
-    & input {
-      border: 0;
-    }
-    &--button {
-      background-color: coral;
-      color: white;
-      border: 0;
-      padding: .3em;
-    }
-  }
 }

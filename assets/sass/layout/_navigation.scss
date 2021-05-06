@@ -1,20 +1,22 @@
 .nav {
+  box-sizing: border-box;
   width: 100%;
   padding: 1.5%;
   border-bottom: 1px solid gray;
-  @include respond-to('md') {
-    width: 85%;
-  }
-  @include respond-to('lg') {
-    width: 80%;
-  }
   &__logo {
     text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 1rem;
   }
   &__menu {
     text-align: right;
+    @include respond-to('md') {
+      padding-right: 1rem;
+    }
+    @include respond-to('lg') {
+      padding-right: 1.5rem;
+    }
   }
   &__items {
     box-sizing: border-box;
@@ -36,10 +38,15 @@
     a {
       text-decoration: none;
       text-transform: uppercase;
+      color: steelblue;
     }
     .input-menu {
       border-radius: 20px;
-      font-size: .7rem;
+      font-size: 1rem;
     }
   }
+}
+
+.nav.contenedor {
+  background-color: white !important;
 }

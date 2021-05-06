@@ -1,35 +1,39 @@
-.contenedor {
-  width: 100%;
-  margin: 0 auto;
-}
-
+// .contenedor {
+//   width: 100%;
+//   margin: 0 auto;
+// }
 @media (min-width: $min-sm) {
   .contenedor {
-    width: 550px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $min-md) {
   .contenedor {
-    width: 760px;
+    width: 85%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $min-lg) {
   .contenedor {
-    width: 970px;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $min-xl) {
   .contenedor {
-    width: 1170px;
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $min-xxl) {
   .contenedor {
-    width: 1370px;
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
@@ -69,6 +73,7 @@
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin-right: 1rem;
 }
 
 // columnas del container
