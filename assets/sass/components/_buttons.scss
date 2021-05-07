@@ -4,6 +4,15 @@
     border: 0;
     width: 50%;
     height: 4vh;
+    @include respond-to('sm') {
+      height: 4vh;
+    }
+    @include respond-to('md') {
+      height: 4vh;
+    }
+    @include respond-to('lg') {
+      height: 2vh;
+    }
   }
   &--button {
     background-color: coral;

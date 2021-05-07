@@ -17,6 +17,9 @@
     @include respond-to('lg') {
       padding-right: 1.5rem;
     }
+    @include respond-to('xl') {
+      padding-right: 0;
+    }
   }
   &__items {
     box-sizing: border-box;
@@ -40,9 +43,21 @@
       text-transform: uppercase;
       color: steelblue;
     }
+    &--input {
+      width: 46%;
+      @include respond-to('sm') {
+        width: 35%;
+      }
+      @include respond-to('md') {
+        width: 33%;
+      }
+      @include respond-to('lg') {
+        width: 30%;
+      }
+    }
     .input-menu {
-      border-radius: 20px;
-      font-size: 1rem;
+      border-radius: 30px;
+      width: 100%;
     }
   }
 }

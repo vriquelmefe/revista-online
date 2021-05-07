@@ -70,6 +70,11 @@ body {
     padding-right: 1.5rem;
   }
 }
+@media (min-width: 1200px) {
+  .nav__menu {
+    padding-right: 0;
+  }
+}
 .nav__items {
   box-sizing: border-box;
   padding: 0.5rem;
@@ -97,9 +102,27 @@ body {
   text-transform: uppercase;
   color: steelblue;
 }
+.nav__item--input {
+  width: 46%;
+}
+@media (min-width: 576px) {
+  .nav__item--input {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .nav__item--input {
+    width: 33%;
+  }
+}
+@media (min-width: 992px) {
+  .nav__item--input {
+    width: 30%;
+  }
+}
 .nav__item .input-menu {
-  border-radius: 20px;
-  font-size: 1rem;
+  border-radius: 30px;
+  width: 100%;
 }
 
 .nav.contenedor {
@@ -457,6 +480,7 @@ body {
 .main-content .news-list__body--image {
   width: 95%;
   height: 25vh;
+  object-fit: cover;
   margin-right: 2rem;
 }
 @media (min-width: 576px) {
@@ -474,13 +498,13 @@ body {
 @media (min-width: 992px) {
   .main-content .news-list__body--image {
     width: 100%;
-    height: 35vh;
+    height: 30vh;
   }
 }
 @media (min-width: 1200px) {
   .main-content .news-list__body--image {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
   }
 }
 @media (min-width: 1400px) {
@@ -513,6 +537,14 @@ body {
 .about-list__header {
   border-bottom: 1px solid gray;
 }
+.about-list__header p {
+  font-size: 0.75em;
+}
+@media (min-width: 992px) {
+  .about-list__header p {
+    height: 20vh;
+  }
+}
 .about-list__tags {
   width: 100%;
   border-bottom: 1px solid gray;
@@ -540,17 +572,18 @@ body {
 .outstanding-news__item img {
   width: 80%;
   height: 25vh;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .outstanding-news__item img {
     width: 100%;
-    height: 50vh;
+    height: 25vh;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .outstanding-news__item img {
-    width: 80%;
-    height: 35vh;
+    width: 90%;
+    height: 30vh;
   }
 }
 
@@ -588,6 +621,21 @@ body {
   border: 0;
   width: 50%;
   height: 4vh;
+}
+@media (min-width: 576px) {
+  .newsletter__group input {
+    height: 4vh;
+  }
+}
+@media (min-width: 768px) {
+  .newsletter__group input {
+    height: 4vh;
+  }
+}
+@media (min-width: 992px) {
+  .newsletter__group input {
+    height: 2vh;
+  }
 }
 .newsletter__group--button {
   background-color: coral;
